@@ -36,6 +36,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_fonts: ^3.0.1
   url_launcher: ^6.1.4
+  flutter_typeahead: ^4.0.0
+  data_table_2: ^2.3.5
 
 dev_dependencies:
   flutter_test:

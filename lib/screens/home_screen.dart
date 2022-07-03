@@ -1,7 +1,6 @@
-// ignore_for_file: unused_field, prefer_final_fields, unused_element
-
 import 'package:flutter/material.dart';
 import 'package:shifter_webapp/widgets/desktop_navbar.dart';
+import 'package:shifter_webapp/widgets/api_request_form.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -35,8 +34,15 @@ class _HomePageState extends State<HomePage> {
         : 1;
 
     return Scaffold(
-        appBar: PreferredSize(
-            preferredSize: Size(screenSize.width, 100),
-            child: DesktopNavbar(opacity: _opacity)));
+      appBar: PreferredSize(
+          preferredSize: Size(screenSize.width, 100),
+          child: DesktopNavbar(opacity: _opacity)
+      ),
+
+      body: SingleChildScrollView(
+        child: RequestForm()
+      )
+
+    );
   }
 }
