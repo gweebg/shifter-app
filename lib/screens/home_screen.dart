@@ -34,15 +34,9 @@ class _HomePageState extends State<HomePage> {
         : 1;
 
     return Scaffold(
-      appBar: PreferredSize(
-          preferredSize: Size(screenSize.width, 100),
-          child: DesktopNavbar(opacity: _opacity)
-      ),
-
-      body: SingleChildScrollView(
-        child: RequestForm()
-      )
-
-    );
+        appBar: PreferredSize(
+            preferredSize: Size(screenSize.width, 100),
+            child: DesktopNavbar(opacity: _opacity)),
+        body: const SingleChildScrollView(child: RequestForm()));
   }
 }
